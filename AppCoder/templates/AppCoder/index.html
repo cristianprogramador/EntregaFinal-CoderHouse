@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'AppCoder/assets/Python.png' %}" type="image/x-icon">
+    <link href="{% static 'AppCoder/CSS/styles.css' %}" rel="stylesheet" />
+    <title>{% block titulo %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="containerLogo">
+                <p>LOGO</p>
+            </div>
+            <div class="containerNav">
+                <a class="navbar" href="{% url 'inicio' %}">Home</a>
+                <a class="navbar" href="#">Profesores</a>
+                <a class="navbar" href="#">About</a>
+                <a class="navbar" href="#"><span>Iniciar sesion</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {% block contenido %}
+        
+        {% endblock %}
+    </main>
+
+    <footer>
+        <h2>Este es el final</h2>
+    </footer>
+    
+    <script src="{% static 'AppCoder/js/app.js' %}"></script>
+</body>
+</html>
