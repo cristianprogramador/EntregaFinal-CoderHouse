@@ -18,17 +18,17 @@
                 <p>LOGO</p>
             </div>
             <div class="containerNav">
-                <a class="navbar" href="{% url 'inicio' %}">Home</a>
-                <a class="navbar" href="#">Profesores</a>
-                <a class="navbar" href="#">About</a>
-                <a class="navbar" href="#"><span>Iniciar sesion</span></a>
+                <a class="navbar" href="{% url 'inicio' %}">Inicio</a>
+                <a class="navbar" href="#">Post</a>
+                <a class="navbar" href="#">Nosotros</a>
+                <a class="navbar" href="{% url 'iniciosesion' %}"><span>Iniciar sesion</span></a>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         {% block contenido %}
-        
+     
         {% endblock %}
     </main>
 
