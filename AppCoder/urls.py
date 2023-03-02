@@ -1,3 +1,10 @@
 from django.urls import path
-from AppCoder import views
+from .views import *
 
+urlpatterns = [
+    path(),
+    path(),
+    path(),
+    path(),
+    path(),
+]
