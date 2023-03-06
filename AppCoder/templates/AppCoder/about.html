@@ -7,28 +7,44 @@ NOSOTROS
 {% endblock %}
 
 {% block contenido %}
-    <div>
-
-        <div>
-
+    <div class="div-padre">
             <div> 
-
               <h1>Acerca de nosotros:</h1>
               <br>
               <br>
-              <p>
-                Este es nuestro proyecto final para el curso de python de coder house. 
-              </p>
-              <br>
-              <h4>Integrantes del grupo</h4>
-              <br>
-              <h2>1- Cristian Cerda</h2>
-              <h2>2- Feliz</h2>
-              <h2>3- Oscar</h2>
 
+              <br>
+              <h4 style="color:white;">Integrantes del grupo</h4>
+              <br>
+              <div class="card">
+                <div><h2>Cristian Cerda</h2></div>
+                <div><h2>Felix Masera</h2></div>
+                <div><h2>Oscar Beller</h2></div>
+              </div>
             </div>
-        </div>
-
     </div>
+
+    <style>
+      .div-padre{
+        background-image: url(/media/juegos/gotham.png);
+        height: 75vh;
+        background-size: cover;
+      }
+      .card{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        font-size: 20px;
+        color: rgb(181, 181, 181);
+      }
+      .card div h2{
+        border: 1px solid green;
+        border-radius: 15px;
+        box-shadow: green 2px 5px 20px;
+        background: rgb(39, 39, 39);
+        padding: 10px;
+
+      }
+    </style>
         
 {% endblock %}
