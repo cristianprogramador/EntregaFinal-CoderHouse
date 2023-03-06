@@ -20,7 +20,7 @@ urlpatterns = [
 
     path("juego/list/", ListaJuego.as_view(), name="ListaGame"),
     path("juego/crear/", CrearJuego.as_view(), name="CrearGame"),
-    path("juego/destalle/<int:pk>", DetalleJuego.as_view(), name="DetalleGame"),
+    path("detalle/<int:pk>", DetalleJuego.as_view(), name="DetalleGame"),
     path("juego/actualizar/<int:pk>", ActualizarJuego.as_view(), name="ActualizarGame"),
     path("juego/eliminar<int:pk>", EliminarJuego.as_view(), name="EliminarGame"),
 

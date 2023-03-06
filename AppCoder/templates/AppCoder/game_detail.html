@@ -10,7 +10,7 @@
                     <h1><strong><u>{{ juego.titulo }}</u></strong></h1>
                     <br>
                     <br>
-                    <!-- <img src="{{ juego.caratula.url }}" alt="imagen" width="600" height="350"> -->
+                    <img src="{{ juego.caratula.url }}" alt="imagen" width="600" height="350">
                     <br>
                     <br>
                     <li><b>Descripcion: </b>{{juego.descripcion}}</li>
@@ -19,13 +19,7 @@
                     <li><b>Tipo de juego: </b>{{juego.tipo_de_juego}}</li>
                     <br>
                     <br>
-                    <a style="background-color:black; border-color:black" href="{% url 'ListaGame' %}">Volver al catalogo</a>
-                    <a style="background-color:green; border-color:green" href="{% url 'ActualizarGame' juego.id %}">Actualizar</a>
-                    <a style="background-color:red; border-color:red" href="{% url 'EliminarGame' juego.id %}">Eliminar</a>
-                   
-                   
 
-                    
                     <br>
             </div> 
         </div>
