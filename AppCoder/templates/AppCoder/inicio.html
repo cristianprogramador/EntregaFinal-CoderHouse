@@ -6,18 +6,25 @@ INICIO
 
 
 {% block contenido %}
-    <h1>BIENVENIDOS</h1>
+    
+    <h1 class="titulo-welcome">BIENVENIDO!! {{usuario}}</h1>
     <div class="formulario-busqueda">
         <img class="lupa" src="{% static 'AppCoder/assets/icons8-search.svg'%}" alt="">
-        <form action="">
+        <form action="{% url 'busquedagame' %}" method="GET">
             {% csrf_token %}
             
-            <input type="text" placeholder="Buscador..." id="inputBuscador" autocomplete="off">
+            <input type="text" placeholder="Buscador de titulos" id="inputBuscador" name="tit" autocomplete="off">
+            
         </form>
     </div>
+    
+    <br>
+    <br>
+    <div class="container-tuzonagame">
+    <p>TU ZONA GAME</p>
+    </div>
 
-
-
+       
 
 
     <style>
@@ -41,6 +48,24 @@ INICIO
         .lupa{
             width: 45px;
             margin-right: 10px;
+        }
+        .container-tuzonagame {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .container-tuzonagame p{
+            font-family: sans-serif, Arial, Helvetica, sans-serif;
+            font-size: 100px;
+            text-shadow: green 5px 5px 30px;
+        }
+        .titulo-welcome{
+            text-shadow: green 1px 1px 2px;
+            font-family: sans-serif, Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            margin-top: 30px;
+            margin-bottom: 20px;
         }
     </style>
 

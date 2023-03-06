@@ -1,5 +1,34 @@
 {% extends "AppCoder/index.html" %}
+{% load static %}
+{% csrf_token %}
 
 {% block titulo %}
 NOSOTROS
+{% endblock %}
+
+{% block contenido %}
+    <div>
+
+        <div>
+
+            <div> 
+
+              <h1>Acerca de nosotros:</h1>
+              <br>
+              <br>
+              <p>
+                Este es nuestro proyecto final para el curso de python de coder house. 
+              </p>
+              <br>
+              <h4>Integrantes del grupo</h4>
+              <br>
+              <h2>1- Cristian Cerda</h2>
+              <h2>2- Feliz</h2>
+              <h2>3- Oscar</h2>
+
+            </div>
+        </div>
+
+    </div>
+        
 {% endblock %}

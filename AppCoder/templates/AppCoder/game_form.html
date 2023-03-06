@@ -1,0 +1,25 @@
+{% extends 'AppCoder/index.html' %}
+{% load static %}
+    
+    {% block contenido %}
+    <div>
+        <div>
+            <div>
+                <div class="col-lg-5"><h1> Agregar un juego nuevo: </h1>
+                    <br>
+                    <form action="" enctype="multipart/form-data" method="POST"> {% csrf_token %}  
+                        
+                        <table>
+                            {{form.as_p}}
+                        </table>
+                        <br>
+                        <input type="submit"  value= "Enviar"></input>   
+                        <a style="background-color:black;  border-color:black" href="{% url 'ListaGame' %}">Volver al catalogo</a>
+                        <br>
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

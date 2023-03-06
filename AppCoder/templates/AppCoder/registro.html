@@ -7,13 +7,13 @@ REGISTRO
 {% block contenido %}
     <h1 class="titulo-sesion">REGISTRAR USUARIO</h1>
     <div class="formulario-busqueda">
-        <form action="">
+        <form action="" method="POST">
             {% csrf_token %}
            
-            <input type="text" placeholder="Nombre de Usuario" id="inputBuscador" autocomplete="off">
-            <input class="inputEmail" type="email" name="" id="" placeholder="Email">
-            <input class="inputPassword" type="password" placeholder="Password">
-            <input class="inputPassword" type="password" placeholder="Repetir Password">
+            <input type="text" placeholder="Nombre de Usuario" id="inputBuscador" autocomplete="off" name="username">
+            <input class="inputEmail" type="email" name="email" id="" placeholder="Email">
+            <input class="inputPassword" type="password" placeholder="Password" name="password1">
+            <input class="inputPassword" type="password" placeholder="Repetir Password" name="password2">
             <input class="btn-inicio" type="submit" value="Registrar">
 
         </form>
