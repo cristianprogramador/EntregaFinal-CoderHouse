@@ -7,16 +7,18 @@
         <div>
             <div> 
                 
-                    <h1><strong><u>{{ juego.titulo }}</u></strong></h1>
+                    <h1><strong><u>{{ game.titulo }}</u></strong></h1>
                     <br>
                     <br>
-                    <img src="{{ juego.caratula.url }}" alt="imagen" width="600" height="350">
+                    <img src="{{ game.caratula.url }}" alt="imagen" width="600" height="350">
                     <br>
                     <br>
-                    <li><b>Descripcion: </b>{{juego.descripcion}}</li>
-                    <li><b>Genero: </b>{{juego.genero}}</li>
-                    <li><b>Fecha de estreno: </b>{{juego.fecha_de_estreno}}</li>
-                    <li><b>Tipo de juego: </b>{{juego.tipo_de_juego}}</li>
+                    <ul>
+                    <li><b>Descripcion: </b>{{game.descripcion}}</li>
+                    <li><b>Genero: </b>{{game.genero}}</li>
+                    <li><b>Fecha de estreno: </b>{{game.fecha_de_estreno}}</li>
+                    <li><b>Tipo de juego: </b>{{game.tipo_de_juego}}</li>
+                    </ul>
                     <br>
                     <br>
 
