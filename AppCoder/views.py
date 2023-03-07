@@ -8,6 +8,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import AuthenticationForm
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.decorators import login_required
+from django.urls import reverse_lazy
 
 # Create your views here.
 
@@ -163,5 +164,19 @@ class EliminarJuego(LoginRequiredMixin, DeleteView):
 
     model= Game
     success_url = "/juego/list"
+
+
+# COMENTARIOS
+
+class ComentarioPagina(LoginRequiredMixin, CreateView):
+    model = Comentario
+    form_class = FormularioComentario
+    template_name = 'AppCoder/comentario.html'
+    success_url = reverse_lazy('inicio')
+
+    def form_valid(self, form):
+        form.instance.comentario_id = self.kwargs['pk']
+        return super(ComentarioPagina, self).form_valid(form)
+
 
 

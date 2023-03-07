@@ -23,6 +23,8 @@ urlpatterns = [
     path("detalle/<int:pk>", DetalleJuego.as_view(), name="DetalleGame"),
     path("juego/actualizar/<int:pk>", ActualizarJuego.as_view(), name="ActualizarGame"),
     path("juego/eliminar<int:pk>", EliminarJuego.as_view(), name="EliminarGame"),
-
+    #Comentario
+    path('gameDetalle/<int:pk>/comentario/', ComentarioPagina.as_view(), name='comentario'),
+    
 ] 
 

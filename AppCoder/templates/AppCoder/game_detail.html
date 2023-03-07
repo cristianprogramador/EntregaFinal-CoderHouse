@@ -22,6 +22,27 @@
             <div class="div-boton">
                 <a class="boton" href="{% url 'ListaGame' %}">Game</a>
             </div>
+
+            <div class="container">
+                <h4>Comentarios...</h4>
+                <br>
+                <div class="container">
+                {% if not game.comentarios.all %}
+                    No han comentado este juego
+                {% else %}
+                    {% for comentario in game.comentarios.all %}
+                    <p><strong>{{comentario.nombre}}</strong></p>
+                    <p>{{comentario.mensaje}}</p>
+                    <p><small>{{comentario.fechaComentario}}</small></p>
+                    <hr>
+                    {% endfor %}
+                {% endif %}
+                <a href="{% url 'comentario' game.pk %}">Agrega un Comentario</a>
+                </div>
+            </div>
+
+
+
     </div>
 
     <style>

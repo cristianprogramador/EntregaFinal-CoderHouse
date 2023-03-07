@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from AppCoder.models import Game
+from AppCoder.models import Game, Comentario
 
 class Juegosingreso(forms.ModelForm):
 
@@ -34,3 +34,13 @@ class FormularioEditar(UserCreationForm):
 
         model = User
         fields = ["username", "email", "password1", "password2"] 
+
+
+class FormularioComentario(forms.ModelForm):
+    class Meta:
+        model = Comentario
+        fields = ('nombre', 'mensaje')
+        widgets = {
+            'nombre': forms.TextInput(attrs={'class': 'form-control'}),
+            'mensaje' : forms.Textarea(attrs={'class': 'form-control'}),
+        }
