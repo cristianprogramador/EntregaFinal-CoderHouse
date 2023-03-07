@@ -52,18 +52,21 @@ def iniciosesion(request):
 
                 return render (request,"AppCoder/inicio.html", {"usuario": user})
             
-        else:
+            else:
+                form = AuthenticationForm()
             
-            form = AuthenticationForm()
-            return render (request,"AppCoder/iniciosesion.html", {"mensaje": "Datos incorrectos. Intente nuevamente.", "formulario": form}) 
+                return render (request,"AppCoder/iniciosesion.html", {"mensaje": "Datos incorrectos. Intente nuevamente.", "formulario": form}) 
 
     else:
 
+       
         form = AuthenticationForm()
-
-    return render (request,"AppCoder/iniciosesion.html", {"formulario": form})
+    return render (request,"AppCoder/iniciosesion.html", {"mensaje": "Datos incorrectos. Intente nuevamente.", "formulario": form})
+    
+    #return render(request, 'AppCoder/iniciosesion.html', {'formulario': form})
 
 #+++++++++++++++++++++++++++++++++
+
 def inicio(request):
     return render(request, 'AppCoder/inicio.html')
 
@@ -107,6 +110,7 @@ def editarperfil(request):
 
 def buscar(request):
     return render (request,"AppCoder/busquedaGames.html")
+
 
 def busquedaGame(request):
 

@@ -9,6 +9,7 @@ INICIO
 <div class="fondo-retro">
     <h1 class="titulo-welcome">BIENVENIDO!! {{usuario}}</h1>
     {% if user.is_authenticated %}
+   
     <div class="formulario-busqueda">
         <img class="lupa" src="{% static 'AppCoder/assets/icons8-search.svg'%}" alt="">
         <form action="{% url 'busquedagame' %}" method="GET">

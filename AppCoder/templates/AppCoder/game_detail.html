@@ -3,27 +3,59 @@
 {% csrf_token %}
 
 {% block contenido %}
-    <div>
-        <div>
+    <div class="fondo-pantalla">
             <div> 
                 
-                    <h1><strong><u>{{ game.titulo }}</u></strong></h1>
+                    <h1 style="text-align: center;"><strong><u>{{ game.titulo }}</u></strong></h1>
                     <br>
                     <br>
-                    <img src="{{ game.caratula.url }}" alt="imagen" width="600" height="350">
+                    <img style="border-radius: 30px;" src="{{ game.caratula.url }}" alt="imagen" width="600" height="350">
                     <br>
                     <br>
-                    <ul>
-                    <li><b>Descripcion: </b>{{game.descripcion}}</li>
-                    <li><b>Genero: </b>{{game.genero}}</li>
-                    <li><b>Fecha de estreno: </b>{{game.fecha_de_estreno}}</li>
-                    <li><b>Tipo de juego: </b>{{game.tipo_de_juego}}</li>
+                    <ul style="padding-left: 30px; padding-bottom: 10px;">
+                    <li>Descripcion:{{game.descripcion}}</li>
+                    <li>Genero: {{game.genero}}</li>
+                    <li>Fecha de estreno: {{game.fecha_de_estreno}}</li>
+                    <li>Tipo de juego: {{game.tipo_de_juego}}</li>
                     </ul>
-                    <br>
-                    <br>
-
-                    <br>
             </div> 
-        </div>
+            <div class="div-boton">
+                <a class="boton" href="{% url 'ListaGame' %}">Game</a>
+            </div>
     </div>
+
+    <style>
+        .fondo-pantalla{
+            background-color: rgb(0, 0, 0);
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .fondo-pantalla div{
+            color: white;
+            padding-top: 20px ;
+            font-family: sans-serif,Arial, Helvetica, sans-serif;
+    
+        }
+        .div-boton{
+            padding-bottom: 30px;
+        }
+        .boton{
+            font-family: sans-serif, Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            padding: 10px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+            border: 1px green solid;
+            box-shadow: green 2px 2px 10px ;
+        }
+        .boton:hover{
+            background: rgb(88, 88, 88);
+        }
+    </style>
 {% endblock %}

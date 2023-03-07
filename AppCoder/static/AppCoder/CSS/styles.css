@@ -54,7 +54,6 @@ header .containerLogo .logo{
 .main{
     width: 100%;
     min-height: 75vh;
-   
     border-top: 3px solid rgb(33, 111, 57);
     border-bottom: 4px solid rgb(54, 193, 95);
 }
