@@ -59,6 +59,7 @@ header .containerLogo .logo{
 }
 
 
+
 /* Footer */
 footer{
     width: 100%;
@@ -66,3 +67,6 @@ footer{
     background: var(--background-boton);
     color: var(--color-fuente);
 }
+
+
+

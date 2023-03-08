@@ -4,18 +4,24 @@ Este proyecto es desarrollado en Python utilizando el framework Django. El proye
 
 # Video Demostración.
 
- ñ
+ 
 
 # DOCUMENTACIÓN.
 
 Para poder encontrar los archivos que nombrare a posterior ingresar en la carpeta AppCoder. Los archivos son: models.py, forms.py, urls.py, views.py,la carpeta de templates, entre otros.
 
- # Autores: 
+ # Grupo de trabajo: 
 
- - Cistian Cerda
- - Oscar Beller
- - Felix Masera
+ - Cistian Cerda: 
+ - Oscar Beller:
+ - Felix Masera:
 
  # Super Usuario: 
 
 - cristian || coder12345
+
+ # Lenguajes utilizados:
+ - HTML
+ - CSS
+ - JAVASCRIPT
+ - PYTHON
