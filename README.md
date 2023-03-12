@@ -14,9 +14,13 @@ Para poder encontrar los archivos que nombrare a posterior ingresar en la carpet
 
  # Grupo de trabajo: 
 
- - Cistian Cerda: 
- - Oscar Beller:
- - Felix Masera:
+- Cistian Cerda :Cristian fue el encarado de hacer la parte de views.py y ademas ayudo en la estetica de la pagina que fue hecho tmb entre los tres juntando ideas.Y tambien encargado de la class Game dentro de model.py.En el forms.py cristian hizo RegistroUsuario
+
+- Oscar Beller: fue el encargado de hacer los urls y enlazar los formularios y tambien la parte visual como ya dijimos que fue entre los tres.En el forms.py hizo la parte de FormularioEditar. El formulario de comentarios fue hecho por los tres ya que no le salia a nadie solo
+
+- Felix Masera: fue el encargado de hacer los models.py y ademas tmbien en la parte estetica de la pagina al igual que oscar y cris.En el forms.py hice la parte de JuegosIngreso. El formulario de comentarios fue hecho por los tres.
+
+Para resumir cada uno hizo su parte y en lo estetico juntamos ideas y pensamientos para crear una estructura visualmente atractiva. Esperamos su devolucion anciosamente. Buen fin de semana cesar.
 
  # Super Usuario: 
 
