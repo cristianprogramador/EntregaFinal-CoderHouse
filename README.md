@@ -44,5 +44,7 @@ Para resumir cada uno hizo su parte y en lo estetico juntamos ideas y pensamient
 
 ![image](https://user-images.githubusercontent.com/108911455/227752047-50ca4149-3f5b-4bf9-b0d2-0a0fe2b4b52b.png)
 
+![image](https://user-images.githubusercontent.com/108911455/227752076-5f22047d-c80d-458f-a5bf-3be35484737e.png)
+
 
 
